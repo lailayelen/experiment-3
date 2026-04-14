@@ -1,0 +1,249 @@
+<html lang="en"><!DOCTYPE html>
+
+ <!-- 
+/* 
+  
+This document contains all instructions which appear in the paradigm, along with some basic functionality. You can change all text by following the instructions below. 
+
+If you don't have experience with programming, it is important that you alter only the plain text, as indicated in the instructions, and leave any functional elements intact.
+*/ 
+--> 
+
+<meta charset="utf-8">
+<title>Intro</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="">
+<meta name="author" content="">
+
+<!-- Stylesheets -->
+<link href="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.3.0/css/bootstrap.min.css" rel="stylesheet">
+<link href="http://cdnjs.cloudflare.com/ajax/libs/alertify.js/0.3.10/alertify.core.css" rel="stylesheet">
+<link href="http://cdnjs.cloudflare.com/ajax/libs/alertify.js/0.3.10/alertify.default.css" rel="stylesheet">
+<link href="style.css" rel="stylesheet">
+
+<!-- For IE6-8 support of HTML5 elements -->
+<!--[if lt IE 9]>
+  <script src="http://html5shim.googlecode.com/svn/trunk/html5.js">
+  </script>
+<![endif]-->
+
+<!-- Javascript -->
+<script src="http://cdnjs.cloudflare.com/ajax/libs/mustache.js/0.3.0/mustache.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/alertify.js/0.3.10/alertify.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/masonry/2.1.08/jquery.masonry.min.js"></script>
+<script src="shortcut.js"></script>
+<script src="main.js"></script>
+<script type="text/javascript" src="profiles.json"></script>
+
+</head>
+
+<body oncontextmenu="return false;">
+<div class="container">
+
+
+
+<div id="intro" style="display:none;" class="instr">
+ <!-- 
+/* 
+  
+**Intro**
+---------
+You can edit this text using basic HTML elements for styling (e.g., <br>, <h3>).
+
+*/ 
+--> <h3>ברוכים הבאים למחקר שלנו
+</h3>
+
+ .את/ה תבצע/י מספר מטלות פשוטות, יחד עם אנשים נוספים, אליהם תהיי/ה מקושר/ת באמצעות האינטרנט
+  <br><br>
+ .תחילה, כל משתתפי המחקר יבחרו "אוואטר" אישי ויכתבו טקסט קצר כדי להציג את עצמם
+  <br><br>
+ לפני תחילת המטלות, תעביר/י 3 דקות יחד עם האנשים הנוספים. <br>
+  .במהלך זמן זה, תוכלו לקרוא ולהגיב על התיאור העצמי אחד של השני
+  <br><br>
+  .הנחיות ספציפיות יופיעו בהמשך
+<br><br>
+  <b>תודה רבה!
+</b><br><br>
+  <button type="submit" id="submit_intro">Continue</button>
+</div>
+
+
+
+<div id="name" style="display:none;" class="instr">
+<!-- 
+/* 
+  
+**Username**
+---------
+You can edit the instructions text for entering usernames below.
+
+*/ 
+-->
+	<h3>אנא רשום את שמך באנגלית</h3>
+	יכול להיות שמך הפרטי, כינוי, או ראשי תיבות
+<br><br>
+	
+	<input type="text" id="username"  autocomplete="off" /><br>	<br>
+	<button type="submit"  id="submit_username">Submit</button>
+</div>
+
+
+
+<div id="avatar" style="display:none;">	
+<!-- 
+/* 
+  
+**Avatar choice**
+---------
+You can edit the instructions text. The text "Your choice of avatar will not be recorded or analyzed" depends on whether you record the choice of avatar.
+
+*/ 
+-->	<h3>אנא בחר/י אוואטר</h3>
+	.האוואטר הזה ייצג אותך במהלך המשימה הקבוצתית אבל לא יקושר לתשובות שלך בהמשך <br>לא ננתח את בחירת האווטאר שלך.  
+	<br><br>
+	<div class="avatars"></div>
+	<br><button type="submit"  id="submit_avatar">Submit</button>
+	<br><br>
+</div>	
+
+
+<div id="text" style="display:none;" class="instr">	
+<!-- 
+/* 
+  
+**Description entry**
+---------
+You can edit the instructions text. 
+
+*/ 
+-->	<h3>אנא הצג/י את עצמך
+ </h3>
+	כתוב/י בבקשה פסקה שבה תציג/י את עצמך בפני שאר הקבוצה <br>
+	כתוב/י משהו שהיית רוצה לספר על עצמך – כל דבר שתרצה/י לשתף.
+	<br><br>	
+	<textarea id="description" autocomplete="off" /></textarea><br>
+	<span id="count">Characters left: 400</span><br><br>
+	<button type="submit" id="submit_text">Submit</button>
+</div>	
+
+
+
+<div id="fb_intro" style="display:none;" class="instr">
+<!-- 
+/* 
+  
+**Task instructions**
+---------
+You can edit the instructions text. The prompt to try and form an impression of the other players is recommended in all ostacism paradigms. Defining the action of "liking" is also recommended. The information regarding task duration can be adjusted to match the actual duration you have set.
+
+*/ 
+-->  <h3>היכרות קבוצתית</h3>
+  .זמן קצר לאחר החיבור, תוכל/י לראות את תיאורי המשתתפים האחרים <br>
+  "like" באפשרותך לקרוא ולתת לייק לטקסט ההיכרות הקצר שהם כתבו על עצמם באמצעות לחיצה על כפתור ה <br>
+בדומה לכפתור הלייק בפייסבוק 
+ <br> 
+  ( ב"פייבוריט" טוויטר, ♥ באינסטגרם וכו') <br>
+  <br>
+  למרות שהאינטראקציה ביניכם מינימלית, אנא נסו לגבש רושם על האנשים בקבוצה. <br>
+  נסו לדמיין אותם בחיים האמיתיים – איך הם עשויים להיראות או להישמע,  <br>
+  איזה סוג של אנשים הם, וכיצד הייתם מסתדרים איתם.
+  <br><br>המשימה תימשך 3 דקות והיא חשובה מאוד למחקר, לכן אנא היו קשובים, 
+  <br>מבלי לעבור בין דפי אינטרנט או לבצע משימות לא קשורות. <br> ייתכן שיופיעו בהמשך שאלות בנוגע למשתתפים האחרים.
+  <br><br><b>אם ההנחיות ברורות, ניתן להמשיך לשלב ההתחברות.
+</b><br>
+  <br>
+  <button type="submit"  id="submit_fb_intro">Log in</button>
+</div>
+
+
+
+<div id="fb_login" style="display:none;" class="instr">
+  <h3>המערכת מתחברת 
+</h3>
+   אנא המתן/י בזמן שאנו מחברים אותך לשאר המשתתפים בקבוצה שלך.
+<br><br>
+  <img class="load" src='ajax-loader.gif' id="loader">
+  <div id="msg_all_done" style="display:none;">
+  <br>
+  	<b>כל המשתתפים מחוברים כעת ואת/ה יכול/ה להמשיך
+.</b><br><br>
+  	<button type="submit"  id="submit_fb_login">Continue</button>
+  </div>
+</div>
+
+
+<!-- 
+/* 
+  
+**In-task instructions and timer**
+---------
+You can edit the instructions text. 
+
+*/ 
+-->
+<div id="task" style="display:none;">
+	<div id="countdown"><span class="secs" style="display: none;"></span>   את/ה יכול/ה ללחוץ על "לייק" אם אהבת את התיאור העצמי של מישהו אחר   <br><br>הזמן שנותר<br><span id="timer" class="cntr label label-info"></span>
+	<br>
+	<button type="submit" id='final-continue' style="display:none;">Continue</button>	
+	</div>
+</div>
+
+
+<script type="template/text" id="usertmp">
+  {{#posts}}
+    
+    <div class="entry">
+    <div class="tophalf">
+
+    	<img src="{{avatar}}" class="avatar">
+    	<h3>{{username}}</h3>
+
+    	<div class="main">
+    		<p>{{text}}</p>
+    	</div>
+
+    	<br style="clear:both;">
+
+    </div>	
+
+    <div class="bottomhalf">
+    	Likes <span class="badge badge-custom userslikes" data-likes="{{likes}}" data-usernames="{{usernames}}">0</span>
+    </div>
+    </div>
+
+  {{/posts}}  
+</script>
+
+
+<script type="template/text" id="otherstmp">
+  {{#posts}}
+    <div class="entry">
+    <div class="tophalf">
+
+    	<img src="{{avatar}}" class="avatar">
+        <h3>{{username}}</h3>
+    	
+    	<div class="main">
+    		
+    		<p>{{text}}</p>
+    	</div>
+
+    	<br style="clear:both;">
+
+    </div>	
+
+    <div class="bottomhalf">
+    	Likes <span class="badge badge-custom otherslikes" data-likes="{{likes}}">0</span>
+    	<button type="submit" class="btn pull-right btn-like btn-custom btn-deround">Like <i class="icon-thumbs-up icon-white"></i></button>
+    </div>
+
+    </div>
+  {{/posts}}  
+</script>
+
+
+</body>
+</html>
