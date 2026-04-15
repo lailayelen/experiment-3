@@ -1,9 +1,7 @@
 body {
-    direction: rtl;
-    text-align: right;
-}
-body { 
-  padding-top: 30px;  
+    direction: rtl !important;
+    text-align: right !important;
+    padding-top: 30px;
 }
 
 .container {
@@ -19,7 +17,7 @@ body {
 
 .entry {
 	width: 240px;
-	float: left;
+	float: right !important;
 	margin: 10px;
 }
 
