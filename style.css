@@ -43,10 +43,10 @@ img.avatar {
 }
 
 .tophalf .main {
-	float: left;
+	float: right !important;
 	width: 120px;
 	font-size: 9pt;
-	text-align: left;
+	text-align: right !important;
 	padding-left: 15px; /* text to avatar distance */
 }
 
